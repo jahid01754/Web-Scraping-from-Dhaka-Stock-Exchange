@@ -26,7 +26,7 @@ It initializes empty lists to store the company details and other information.
 For each company, it performs the following steps:
 It sends a request to the specific URL of the company's page.
 It creates a BeautifulSoup object from the page content.
-It extracts the company name from the <h2> element with the class "BodyHead".
+It extracts the company name from the element with the class "BodyHead".
 It iterates over the rows of a table to extract various company details.
 It finds specific tables using their class names and extracts the sector information.
 It appends the company details to the company_details list.
@@ -37,5 +37,4 @@ It creates a Pandas DataFrame from the other_info list and assigns appropriate c
 It exports the company_info_df DataFrame to a CSV file named "company_info.csv".
 It creates a Pandas DataFrame from the company_details list and assigns appropriate column names.
 It exports the company_details_df DataFrame to a CSV file named "company_details.csv".
-**How to Use the Code**
-To use this code, you need to have the required libraries (requests,
+
